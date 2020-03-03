@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#21033B</color>
+    <color name="colorPrimaryDark">#21033B</color>
+    <color name="colorAccent">#21033B</color>
+
+    <color name="white">#FFFFFF</color>
+    <color name="transparent_white">#CCCCCC</color>
+    <color name="main_background">#21033B</color>
+    <color name="background_light">#55396D</color>
+    <color name="bottom_color">#3B245D</color>
+    <color name="text_color1">#FFFF00</color>
+    <color name="text_color2">#FFD800</color>
+    <color name="text_color3">#F7FF00</color>
+    <color name="dialog_box">#BEA6D4</color>
+    <color name="s1_pinkish">#F8A7AE</color>
+    <color name="s2_blue">#93BFFE</color>
+    <color name="s3_purple">#EBA7F7</color>
+    <color name="s4_orange">#FDB461</color>
+    <color name="s5_violet">#948BC5</color>
+    <color name="s6_skin">#FAB1A0</color>
+    <color name="lab">#81ECEC</color>
+    <color name="light_green">#81ECEC</color>
+    <color name="test">#F5F10F</color>
+
+</resources>

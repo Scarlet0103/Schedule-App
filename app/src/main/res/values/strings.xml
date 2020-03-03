@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">Schedule</string>
+    <string name="login_txt">Already have an account? Login</string>
+    <string name="register">Register</string>
+    <string name="username">Username</string>
+    <string name="emailid">Email ID</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="home">Home</string>
+    <string name="subjects">Subjects</string>
+    <string name="sign_out">Sign out</string>
+    <string name="s1">WCT</string>
+    <string name="s2">CC</string>
+    <string name="s3">M&amp;S</string>
+    <string name="s4">E1</string>
+    <string name="s5">E2</string>
+    <string name="time_09">09:00</string>
+    <string name="time_10">10:00</string>
+    <string name="time_11">11:00</string>
+    <string name="time_12">12:00</string>
+    <string name="time_14">14:00</string>
+    <string name="time_15">15:00</string>
+    <string name="time_16">16:00</string>
+    <string name="time_17">17:00</string>
+    <string name="infotextstring">
+        <br>
+            swipe right to mark your attendance \n</br>
+        <br>
+            swipe left to mark your absence \n</br>
+        <br>
+            leave if class got cancelled \n</br>
+    </string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

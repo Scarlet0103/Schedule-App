@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@color/main_background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1.0"
+    tools:context=".authentication.RegistrationFirebase">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_weight="0.3"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <com.google.android.material.appbar.AppBarLayout
+            android:gravity="center"
+            android:elevation="0dp"
+            android:background="@color/main_background"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:src="@drawable/image_background"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"/>
+        </com.google.android.material.appbar.AppBarLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.7">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:id="@+id/username_txt_reg"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:background="@drawable/dialogbox_layout"
+                android:ems="15"
+                android:hint="@string/username"
+                android:inputType="text"
+                android:paddingStart="13dp"
+                android:paddingEnd="1dp"
+                android:textColor="@color/text_color3"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.2000" />
+
+            <EditText
+                android:id="@+id/email_txt_reg"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/dialogbox_layout"
+                android:ems="15"
+                android:hint="@string/emailid"
+                android:inputType="textEmailAddress"
+                android:paddingStart="13dp"
+                android:paddingEnd="1dp"
+                android:textColor="@color/text_color3"
+                app:layout_constraintEnd_toEndOf="@+id/username_txt_reg"
+                app:layout_constraintStart_toStartOf="@+id/username_txt_reg"
+                app:layout_constraintTop_toBottomOf="@+id/username_txt_reg" />
+
+            <EditText
+                android:id="@+id/password_txt_reg"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/dialogbox_layout"
+                android:ems="15"
+                android:hint="@string/password"
+                android:inputType="textPassword"
+                android:paddingStart="13dp"
+                android:paddingEnd="1dp"
+                android:textColor="@color/text_color3"
+                app:layout_constraintEnd_toEndOf="@+id/email_txt_reg"
+                app:layout_constraintStart_toStartOf="@+id/email_txt_reg"
+                app:layout_constraintTop_toBottomOf="@+id/email_txt_reg" />
+
+            <TextView
+                android:id="@+id/login_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:text="@string/login_txt"
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/password_txt_reg"
+                app:layout_constraintTop_toBottomOf="@+id/listBtn"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <Button
+                android:id="@+id/register_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/button_layout"
+                android:text="@string/register"
+                android:textAllCaps="false"
+                android:textColor="@color/text_color3"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/password_txt_reg"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toEndOf="@+id/login_txt"
+                app:layout_constraintTop_toBottomOf="@+id/listBtn"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <Button
+                android:id="@+id/listBtn"
+                android:background="@drawable/dialogbox_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:paddingStart="25dp"
+                android:paddingEnd="25dp"
+                android:layout_marginTop="24dp"
+                android:text="Select Subjects"
+                android:textColor="@color/text_color3"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/password_txt_reg"
+                app:layout_constraintStart_toStartOf="@+id/password_txt_reg"
+                app:layout_constraintTop_toBottomOf="@+id/password_txt_reg"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_view_reg"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:cardBackgroundColor="@color/main_background"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <com.airbnb.lottie.LottieAnimationView
+                    android:id="@+id/progress_loading_reg"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:elevation="10dp"
+                    android:translationZ="10dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:lottie_autoPlay="true"
+                    app:lottie_fileName="data.json"
+                    app:lottie_loop="true" />
+            </androidx.cardview.widget.CardView>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+</LinearLayout>
